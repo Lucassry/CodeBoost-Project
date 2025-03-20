@@ -1,0 +1,88 @@
+
+/* Base das páginas */
+#main #Introdução{
+  max-width: 700px;
+  display: flex;
+  align-items: flex-start;
+   gap: 25px; 
+   overflow: hidden; 
+   
+}
+#First_image{
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s;
+  padding-top: 10px;
+}
+#Title_icon{
+  height: 50px;
+  padding: 1px;
+  padding-left: 10px;
+  position: relative;
+  top: 6px;
+}
+
+/* Página de criador*/
+.criador{
+  padding-top: 200px;
+  padding-bottom: 150px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.Criador-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 20px;
+}
+.criador img {
+  
+  width: 300px; 
+  height: 300px; 
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 3px solid #ccc;
+}
+.criador h2 {
+  font-size: 40px; 
+  color: #000000;
+  margin: 0;
+}
+.criador p {
+  font-size: 16px;
+  color: #5b5959;
+  line-height: 1.6;
+  max-width: 600px; 
+}
+
+/*footer*/
+main{
+  margin-bottom: 140px;
+}
+/* Responsividade */
+@media (max-width: 800px) {
+  #main #Introdução {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px; 
+  }
+
+  #First_image {
+    width: 100%;
+    max-width: 300px; 
+    padding-top: 0; 
+  }
+}
+
+@media (max-width: 500px) {
+  #main #Introdução {
+    gap: 10px; 
+  }
+
+  #First_image {
+    max-width: 250px;
+  }
+}
